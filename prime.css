@@ -1,0 +1,26 @@
+body {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  background-image: url(https://cdnb.artstation.com/p/assets/images/images/013/726/849/large/danny-moll-csv-belmont-home-ruins.jpg?1540873016);
+  background-size: cover;
+  background-position: center;
+}
+
+.cards {
+  min-height: 50dvh;
+}
+
+.card-gradient {
+  background: rgb(202,202,59);
+  background: radial-gradient(circle, rgba(202,202,59,1) 19%, rgba(100,95,59,1) 85%); 
+}
+
+button {
+  background: none;
+  border: none;
+}
