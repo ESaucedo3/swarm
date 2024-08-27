@@ -65,12 +65,11 @@ const people = [
 
 function drawLocations() {
   for (let i = 0; i < locations.length; ++i) {
-    let currentLocation = locations[i];
-    console.log(currentLocation);
-    let filteredPeople = people.filter((person) => person.location === currentLocation);
-    for (let person of filteredPeople) {
-      console.log(person);
-    }
+    let location = locations[i];
+    let filteredPeople = people.filter((person) => person.location === location);
+    let pictures = filteredPeople.map((person) => person.picture);
+    let pElem = document.getElementById(location);
+    pElem.textContent = pictures.join(' ');
   }
 }
 
